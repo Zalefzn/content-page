@@ -1,0 +1,93 @@
+.body-container{
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 70px;
+    height: 20%;
+    display: inline-block;
+    width: auto;
+    animation-name: opacityAnimate;
+    animation-duration: 2s;
+}
+
+.body-container .content{
+    display: block;
+    position: relative;
+}
+
+.body-container .content img{
+    height: 400px;
+    width: auto;
+}
+
+.body-container .content h3{
+    margin: auto;
+    margin-left: 17px;
+    animation-name: header;
+    animation-duration: 10s;
+}
+.body-container .content p{
+    margin: auto;
+    margin-left: 55px;
+    animation-name: parag;
+    animation-duration: 12s;
+}
+
+
+.body-container .button {
+    margin: auto;
+    padding: 10px 80px;
+}
+
+.body-container .button .content-button button{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    padding: 5px 15px;
+}
+
+.body-container .button .content-button button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(176, 176, 176);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    border-style: none;
+}
+
+@keyframes opacityAnimate {
+    0%{
+        height: 300px;
+        opacity: 0.5;
+        margin-top: 30px;
+    }
+    15%{
+        height: 400px;
+        opacity: 0;
+        margin-top: 50px;
+    }
+}
+
+@keyframes header {
+    0%{
+        margin-left: 10px;
+    }
+
+    25%{
+        margin-left: 17px;
+    }
+}
+
+@keyframes parag {
+    0%{
+        margin-left: 50px;
+    }
+
+    30%{
+        margin-left: 55px;
+    }
+}
